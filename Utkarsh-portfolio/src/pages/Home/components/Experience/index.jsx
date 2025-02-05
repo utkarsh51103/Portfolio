@@ -1,5 +1,4 @@
 import { experiences } from "../../../../utils/constants";
-import { motion } from "motion/react";
 
 function index() {
   return (
@@ -18,8 +17,9 @@ function index() {
           <div className="text-slate-400 w-[80%] md:w-[60%] flex items-center justify-between gap-28 md:gap-40 lg:gap-52 border-b-[1px] pb-4 border-white">
             <div className="text-neutral-300 font-thin">{experience.time}</div>
             <div className="flex flex-col items-end justify-center gap-1">
-              <div className="text-purple-500 text-right text-lg font-light">
-                {experience.organisation}
+              <div className="text-purple-500 text-right text-lg font-light flex items-center gap-2">
+              <div>{experience.organisation}</div>
+               <div><img src={experience.image} height={40} width={40}/></div>
               </div>
               <div className="text-sm text-right text-white font-extralight">
                 {experience.title}

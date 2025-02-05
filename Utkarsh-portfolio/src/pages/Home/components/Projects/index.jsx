@@ -10,7 +10,7 @@ function index(props) {
   return (
     <div className="flex flex-col items-center justify-center mt-10">
       <div className="text-3xl font-thin text-white border-b-[1px] border-white">Projects</div>
-      <div className="my-5 flex gap-10">
+      <div className="mt-10 flex gap-10">
         <div className="flex flex-col items-center justify-center gap-3">
           <a href={FLING_URL}>
             <motion.img
