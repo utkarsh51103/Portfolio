@@ -2,7 +2,7 @@ import { useState,useEffect} from "react";
 import { HERO_TEXT } from "../../../../utils/constants";
 import { motion } from "motion/react";
 import { Typewriter } from "react-simple-typewriter";
-import HERO from '../../../../utils/HERO.png';
+import HERO from '../../../../utils/HERO-bg.png';
 
 function Index(props) {
 
@@ -32,7 +32,7 @@ function Index(props) {
         <div className="text-white text-[13px] font-light md:w-[75%]">{HERO_TEXT}</div>
       </div>
       <div className="flex-1 text-white flex items-center justify-center md:pt-10 md:mr-32">
-       <img src={HERO} height={400} width={200} className="rounded-xl"/>
+       <img src={HERO} height={400} width={400} className="rounded-xl md:h-[500px] md:w-[500px]"/>
       </div>
     </div>
   );
