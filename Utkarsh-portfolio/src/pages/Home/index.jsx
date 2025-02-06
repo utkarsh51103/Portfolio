@@ -66,11 +66,11 @@ function index() {
         <Hero />
       </div>
       <About />
-      <div id="experience">
-        <Experience />
-      </div>
       <div id="skill">
         <Technologies />
+      </div>
+      <div id="experience">
+        <Experience />
       </div>
       <div id="project">
         <Projects />
