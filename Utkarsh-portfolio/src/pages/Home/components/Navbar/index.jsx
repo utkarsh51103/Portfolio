@@ -3,13 +3,18 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { useState } from "react";
 import Logo from "../../../../utils/US.png";
 import { motion } from "framer-motion";
 
+
+
 function index() {
+
   return (
-    <div className="w-full flex flex-col text-white py-5 m-0 p-0">
-      <div className="flex items-center justify-center z-10 mx-24">
+    <div className="w-full text-white py-5 m-0 p-0">
+      
+      <div className="flex items-center justify-between mx-24 ml-36">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -17,16 +22,13 @@ function index() {
         >
           <img
             src={Logo}
-            className="h-[80px] w-[80px] rounded-full ml-0"
+            className="h-[80px] w-[80px] rounded-full  md:ml-20 ml-0"
           />
         </motion.div>
         <div className="flex gap-5 ml-5 py-7 text-3xl">
           <div>
-            <a
-              href="https://linkedin.com/in/utkarsh-sharma-78a007259/"
-              target="_blank"
-            >
-              <FaLinkedin />
+            <a href="https://linkedin.com/in/utkarsh-sharma-78a007259/" target="_blank">
+              <FaLinkedin className="text-blue-500"/>
             </a>
           </div>
           <div>
@@ -36,19 +38,15 @@ function index() {
           </div>
           <div>
             <a href="https://www.instagram.com/utkarsh511_/" target="_blank">
-              <FaInstagram />
+              <FaInstagram className="text-pink-600"/>
             </a>
           </div>
-          <div>
+          <div className="p-1 bg-white rounded-full">
             <a href="https://x.com/Utkarsh51103" target="_blank">
-              <FaSquareXTwitter />
+              <FaSquareXTwitter className="text-black"/>
             </a>
           </div>
         </div>
-      </div>
-      <div className="flex items-center font-thin z-20 justify-center gap-2">
-        <div>Developed by - Utkarsh Sharma</div>
-        <div>&copy; All rights Reserved</div>
       </div>
     </div>
   );

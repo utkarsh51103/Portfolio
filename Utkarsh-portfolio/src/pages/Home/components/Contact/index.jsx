@@ -23,7 +23,7 @@ function index() {
         id="name"
         name="name"
         placeholder="Name"
-        className="p-2 rounded-md placeholder:text-white bg-gray-900 placeholder:font-light"
+        className="p-2 rounded-md placeholder:text-white bg-gray-800 placeholder:font-light"
       />
       <ValidationError
        prefix="name"
@@ -35,7 +35,7 @@ function index() {
         id="number"
         name="number"
         placeholder="Phone Number"
-        className="p-2 rounded-md placeholder:text-white bg-gray-900 placeholder:font-light"
+        className="p-2 rounded-md placeholder:text-white bg-gray-800 placeholder:font-light"
       />
       <ValidationError
        prefix="number"
@@ -47,7 +47,7 @@ function index() {
         id="email"
         name="email"
         placeholder="Email"
-        className="p-2 rounded-md placeholder:text-white bg-gray-900 placeholder:font-light"
+        className="p-2 rounded-md placeholder:text-white bg-gray-800 placeholder:font-light"
       />
       <ValidationError
        prefix="email"
@@ -60,7 +60,7 @@ function index() {
           name="message"
           id="message"
           placeholder="Message"
-          className="p-2 h-full rounded-md placeholder:text-white bg-gray-900 placeholder:font-light text-clip"
+          className="p-2 h-full rounded-md placeholder:text-white bg-gray-800 placeholder:font-light text-clip"
         />
         <ValidationError
        prefix="message"
@@ -68,7 +68,7 @@ function index() {
        errors={submit.errors}
       />
       </div>
-      <button className="bg-gray-900 hover:bg-gray-800 transition-all duration-300 text-purple-500 px-5 py-2 rounded-lg" type="submit" disabled={submit.submitting}>
+      <button className="bg-gray-800 hover:bg-gray-700 transition-all duration-300 text-purple-500 px-5 py-2 rounded-lg" type="submit" disabled={submit.submitting}>
         Submit
       </button>
     </form>

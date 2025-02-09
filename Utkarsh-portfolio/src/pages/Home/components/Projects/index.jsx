@@ -8,11 +8,11 @@ import { FLING_URL, FLING_GITHUB,ROUTESYNC_GITHUB,ROUTESYNC_URL } from "../../..
 
 function index(props) {
   return (
-    <div className="flex flex-col items-center justify-center mt-10">
+    <div className="flex flex-col items-center justify-center mt-10 pb-10">
       <div className="text-3xl font-thin text-white border-b-[1px] border-white">Projects</div>
       <div className="mt-10 flex gap-10">
-        <div className="flex flex-col items-center justify-center gap-3">
-          <a href={FLING_URL}>
+        <div className="flex flex-col items-center justify-center z-10 gap-3">
+          <a href={FLING_URL} target="_blank">
             <motion.img
              whileHover={{ scale: 1.1}}
               src={Fling}
@@ -27,14 +27,14 @@ function index(props) {
           <div className="text-purple-500 font-semibold">
           Fling
           </div>
-            <a href={FLING_GITHUB}>
+            <a href={FLING_GITHUB} target="_blank">
               <FaGithub className="text-white text-lg" />
             </a>
             <Tooltip id="fling-github" content="GitHub" />
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center gap-3">
-          <a href={ROUTESYNC_URL}>
+        <div className="flex flex-col items-center justify-center z-10 gap-3">
+          <a href={ROUTESYNC_URL} target="_blank">
             <motion.img
               whileHover={{ scale: 1.1 }}
               src={RouteSync}
@@ -50,7 +50,7 @@ function index(props) {
           <span className="text-orange-500">Route</span>
           <span>Sync</span>
           </div>
-            <a href={ROUTESYNC_GITHUB}>
+            <a href={ROUTESYNC_GITHUB} target="_blank">
               <FaGithub className="text-white text-lg" />
             </a>
             <Tooltip id="fling-github" content="GitHub" />

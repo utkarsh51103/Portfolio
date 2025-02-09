@@ -4,9 +4,8 @@ import { FaNode } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
-import { motion } from "motion/react";
 import { FaGithub } from "react-icons/fa6";
-import { FaPython } from "react-icons/fa";
+import {motion} from 'framer-motion';
 import { SiPostman } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";
@@ -14,15 +13,21 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaWordpress } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import python from '../../../../utils/python.png';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
 
 
 function index() {
   return (
-    <div className="flex flex-col items-center justify-center w-full text-white mt-20 ">
-      <div className="text-3xl font-thin border-b-[1px] border-white">Tech Stack</div>
-      <div className="flex flex-wrap items-center w-70% md:w-[60%] lg:w-[50%] justify-center gap-12 md:gap-16 lg:gap-20 my-10">
+    <div className="flex flex-col md:flex-row items-center justify-center w-full text-white mt-20 ">
+    <div className="flex-1 flex flex-col items-center justify-center">
+      <div className="text-3xl font-thin border-b-[1px] border-white mt-10">Skills</div>
+      <motion.div className="flex z-10 flex-wrap items-center w-70%  justify-center gap-12 md:gap-16 lg:gap-20 my-10"
+         initial={{opacity:0,scale:0.5}}
+          whileInView={{opacity:1,scale :1}}
+          transition={{duration:1.5}}
+      >
         <motion.div 
            whileHover={{ scale: 1.2}}
            initial={{y:10}}
@@ -61,7 +66,7 @@ function index() {
         whileHover={{ scale: 1.2}}
         initial={{y:10}}
         animate={{y:0}}
-        transition={{duration:0.7,
+        transition={{duration:0.8,
          repeat:Infinity,
          repeatType:"reverse",
         }}
@@ -167,7 +172,16 @@ function index() {
         >
           <SiRedux className="text-[50px] md:text-[60px] text-purple-400" />
         </motion.div>
+      </motion.div>
       </div>
+      <div className="flex-1">
+     <DotLottieReact
+      src="https://lottie.host/3ca54bb7-301e-46cc-a58b-c6cc75ec287e/NPyJsjtetq.lottie"
+      loop
+      autoplay
+      className="mb-10 md:mb-0"
+     />
+    </div>
     </div>
   );
 }
