@@ -13,19 +13,25 @@ export const experiences = [
     title: "Web Developer",
     organisation: "AITR-ACM",
     image: AITR_ACM_LOGO,
-    description:['Full stack web developer in AITR-ACM, learned new technologies like Node.js and WordPress while Working.', 'Designed the AITR-ACM website using WordPress and learned deeper about its backend. Increased event registration by 25% by designing an optimized website.']
+    description: [
+      "Full stack web developer in AITR-ACM, learned new technologies like Node.js and WordPress while Working.",
+      "Designed the AITR-ACM website using WordPress and learned deeper about its backend. Increased event registration by 25% by designing an optimized website.",
+    ],
   },
   {
     time: "Dec 2022 - Dec 2023",
     title: "Member",
     organisation: "IEEE",
     image: IEEE_LOGO,
-    description:['As a member of the IEEE team, I played a key role in organizing multiple events and hosting various competitions.','Among these, I participated in and won the IoT Model Competition, emerging as the campus champion.']
+    description: [
+      "As a member of the IEEE team, I played a key role in organizing multiple events and hosting various competitions.",
+      "Among these, I participated in and won the IoT Model Competition, emerging as the campus champion.",
+    ],
   },
 ];
 
-export const FLING_URL = "https://fling-mern-socke-io-y1ly.vercel.app/chat";
+export const FLING_URL = "https://fling-mern-socke-io-y1ly.vercel.app/";
 export const FLING_GITHUB =
   "https://github.com/utkarsh51103/Fling-MERN-Socke.io";
-export const ROUTESYNC_URL = "https://github.com/utkarsh51103/RouteSync";
+export const ROUTESYNC_URL = "https://route-sync.vercel.app/";
 export const ROUTESYNC_GITHUB = "https://github.com/utkarsh51103/RouteSync";

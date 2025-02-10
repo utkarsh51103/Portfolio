@@ -6,6 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { useState } from "react";
 import Logo from "../../../../utils/US.png";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa6";
 
 
 
@@ -34,6 +35,11 @@ function index() {
           <div>
             <a href="https://github.com/utkarsh51103" target="_blank">
               <FaGithub />
+            </a>
+          </div>
+          <div>
+            <a href="https://wa.me/919770757784" target="_blank">
+              <FaWhatsapp  className="text-green-500"/>
             </a>
           </div>
           <div>
