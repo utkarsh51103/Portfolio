@@ -15,8 +15,8 @@ function index() {
       
       <div className=" flex flex-col md:flex-row items-center justify-center">
         <motion.div
-          whileInView={{ x: 0 }}
-          initial={{ x: -200 }}
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
           transition={{ duration: 1, ease: "linear" }}
           className="flex-1 flex h-[400px] w-[250px] lg:w-[250px] items-center justify-center"
         >
@@ -27,16 +27,16 @@ function index() {
           />
         </motion.div>
         <motion.div
-          whileInView={{ x: 0 }}
-          initial={{ x: 200 }}
+        whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
           transition={{ duration: 1, ease: "linear" }}
           className="flex-1 mx-5 mt-10 w-[90%] xl:w-[80%]"
         >
           <div className="ml-10 font-extralight">
             <div>{ABOUT_TEXT}</div>
-            <div className="flex w-full items-center justify-center gap-5 mt-5">
+            <div className="flex flex-col md:flex-row w-full items-center justify-center gap-5 mt-5">
               <motion.div
-                className="flex flex-col gap-5 w-[50%] h-[250px] xl:h-[150px] bg-black/40 hover:bg-black/70 transition-all duration-300 z-20 rounded-lg p-5"
+                className="flex flex-col gap-5 w-[75%] md:w-[50%] h-[150px] md:h-[250px] xl:h-[150px] bg-black/40 hover:bg-black/70 transition-all duration-300 z-20 rounded-lg p-5"
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -52,7 +52,7 @@ function index() {
                 </div>
               </motion.div>
               <motion.div
-                className="flex flex-col gap-5 w-[50%] h-[250px] xl:h-[150px] bg-black/40 hover:bg-black/70 transition-all duration-300 z-20 rounded-lg p-5"
+                className="flex flex-col gap-5 w-[75%] md:w-[50%] h-[250px] md:h-[250px] xl:h-[150px] bg-black/40 hover:bg-black/70 transition-all duration-300 z-20 rounded-lg p-5"
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -68,9 +68,9 @@ function index() {
                 </div>
               </motion.div>
             </div>
-            <div className="flex w-full items-start justify-start gap-5 mt-5">
+            <div className="flex w-full items-center md:items-start justify-center gap-5 mt-5">
               <motion.div
-                className="flex flex-col gap-5 w-[50%] h-[250px] xl:h-[150px] bg-black/40 hover:bg-black/70 transition-all duration-300 z-20 rounded-lg p-5"
+                className="flex flex-col gap-5 w-[75%] md:w-[50%] h-[150px] md:h-[250px] xl:h-[150px] bg-black/40 hover:bg-black/70 transition-all duration-300 z-20 rounded-lg p-5"
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}

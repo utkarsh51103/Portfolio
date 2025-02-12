@@ -19,12 +19,12 @@ function Index(props) {
           whileInView={{ x: 0 }}
           initial={{ x: -200 }}
           transition={{ duration: 0.5, ease: "linear" }}
-          className="text-[30px] lg:text-[40px] text-purple-800 font-extralight"
+          className="text-[50px] lg:text-[70px] text-white font-audiowide"
         >
           Utkarsh Sharma
         </motion.div>
         <motion.div
-          className="text-[50px] font-thin text-purple-500"
+          className="text-[40px] font-quantico text-purple-500"
           whileInView={{ x: 0 }}
           initial={{ x: -200 }}
           transition={{ duration: 1, ease: "linear" }}
@@ -40,10 +40,11 @@ function Index(props) {
             typeSpeed={100}
             deleteSpeed={50}
             delaySpeed={2000}
+            className="text-purple-400"
           />
         </motion.div>
         <motion.div
-          className="text-white text-[15px] font-thin md:w-[50%]"
+          className="text-purple-500 font-quantico text-[16px] md:w-[50%]"
           whileInView={{ x: 0 }}
           initial={{ x: -200 }}
           transition={{ duration: 1.5, ease: "linear" }}
@@ -86,7 +87,7 @@ function Index(props) {
         }}
       >
         <DotLottieReact
-          src="https://lottie.host/e5d4e822-467e-4e04-aeed-813d1e10af09/4BpSJmJ9Tl.lottie"
+          src="https://lottie.host/40b58a0c-cfb6-4fd1-aace-6ca6215a09af/oVvmbTZPMu.lottie"
           loop
           autoplay
           className="h-[300px] w-[500px]"

@@ -14,19 +14,7 @@ function index() {
 
   return (
     <div className="w-full text-white py-5 m-0 p-0">
-      
-      <div className="flex items-center justify-between mx-24 ml-36">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <img
-            src={Logo}
-            className="h-[80px] w-[80px] rounded-full  md:ml-20 ml-0"
-          />
-        </motion.div>
-        <div className="flex gap-5 ml-5 py-7 text-3xl">
+        <div className="flex gap-5 justify-center py-7 text-3xl">
           <div>
             <a href="https://linkedin.com/in/utkarsh-sharma-78a007259/" target="_blank">
               <FaLinkedin className="text-blue-500"/>
@@ -53,7 +41,7 @@ function index() {
             </a>
           </div>
         </div>
-      </div>
+    
     </div>
   );
 }

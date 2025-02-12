@@ -21,14 +21,14 @@ function index() {
         <div>
           <Navbar />
         </div>
-        <section id="Home" className="h-[100vh] lg:h-[80vh]">
+        <section id="Home" className="h-[120vh] md:h-[100vh] lg:h-[80vh]">
           <Hero />
         </section>
         <Parallax type="About" />
-        <section id="About" className="h-[150vh] xl:h-[100vh]">
+        <section id="About" className="h-[145vh] md:h-[100vh]">
           <About />
         </section>
-        <div id="Skill" className="h-[75vh]">
+        <div id="Skill" className="h-[100vh]">
           <Technologies />
         </div>
         <div id="Experience" className="pb-20">
